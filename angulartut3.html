@@ -1,12 +1,27 @@
 <!doctype html>
-<html ng-app="" >
+<html ng-app="app3" ng-cloak>
   <head>
     <title>AngularJS Tutorial</title>
+    <style>
+      [ng\:cloak,[ng-cloak], .ng-cloak {
+        display: none;
+      }
+    </style>
   </head>
   <body>
 
+    <div id="groceryList" ng-controller="gListCtrl">
+
+      <h3 class="ListTitle">{{groceries.length}} Groceries to get</h3>
+
+      <h3 class="ListTitle">
+        <span ng-bind="groceries.length"></span> Groceries to get
+      </h3>
+
+    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-    <script src="js/exam1.js"></script>
+    <script src="js/exam3.js"></script>
   </body>
 </html>

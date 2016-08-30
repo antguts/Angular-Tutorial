@@ -1,6 +1,11 @@
-var app2 = angular.module('app2', []);
+var app3 = angular.module('app3', []);
 
-app2.controller('ctrl1', function($scope) {
+app3.controller('gListCtrl', function($scope) {
 
-
+  $scope.groceries= [
+    {item: "Tomatoes", purchased: false},
+    {item: "Potatoes", purchased: false},
+    {item: "Bread", purchased: false},
+    {item: "Hummas", purchased: false},
+  ];
 });
