@@ -4,28 +4,28 @@
     <title>AngularJS Tutorial</title>
   </head>
   <body>
-  <div ng-controller="ctrl1">
+    <div ng-controller="ctrl1">
 
-  <span>Values:</span>
-  <input type="text" ng-model="first" />
-  <input type="text" ng-model="second" />
+      <span>Values:</span>
+      <input type="text" ng-model="first" />
+      <input type="text" ng-model="second" />
 
-  <button ng-click="updateValue()">Sum</button>
-  <br><br>
+      <button ng-click="updateValue()">Sum</button>
+      <br><br>
 
-  {{calculation}}
+      {{calculation}}
 
-  <p>5 + 5 = {{5+5}}</p>
+      <p>5 + 5 = {{5+5}}</p>
 
-  <p>Your first value is {{first}} </p>
+      <p>Your first value is {{first}} </p>
 
-  <p>Your second value is
-  <span data-ng-bind="second"></span>
-  </p>
+      <p>Your second value is
+        <span data-ng-bind="second"></span>
+      </p>
 
-  <p>{{person.fName + " " + person.lName}} you entered {{first + " and " + second}}
+      <p>{{person.fName + " " + person.lName}} you entered {{first + " and " + second}}
 
-</div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="js/exam1.js"></script>
